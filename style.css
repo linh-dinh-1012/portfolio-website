@@ -1,0 +1,229 @@
+:root {
+    /* Cole Nussbaumer palette */
+    --deep-blue: #1F4E79;      /* Tựa như chữ “data” trên bìa */
+    --slate-blue: #4A6FA5;     /* Màu nhạt hơn cho icon / accents */
+    --light-bg: #F7F9FA;       /* Nền sáng premium */
+    --white: #FFFFFF;
+    --grey: #D9E1E8;           /* Viền & background subtle */
+    --dark-grey: #2E3B4E;      /* Text đậm, sang trọng */
+
+    /* Shadows nhẹ theo tông xanh của sách */
+    --soft-shadow: 0 6px 16px rgba(31, 78, 121, 0.08);
+    --soft-shadow-hover: 0 10px 22px rgba(31, 78, 121, 0.15);
+
+    /* Typography */
+    --hero-title: 32px;
+    --title: 30px;
+    --subtitle: 15px;
+    --card-title: 18px;
+    --text: 15px;
+    --text-small: 14px;
+
+    --radius: 16px;
+}
+
+
+/* ---------- GLOBAL ---------- */
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: white;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ---------- HEADER ---------- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 70px 10px;
+}
+
+.name-title {
+    font-size: 32px;
+    margin: 0;
+    color: var(--deep-blue);
+}
+
+.tagline {
+    margin-top: 6px;
+    font-size: 15px;
+    color: var(--dark-grey);
+    line-height: 1.4;
+}
+
+.tagline .sub {
+    font-size: 14px;
+}
+
+/* HEADER TEXT */
+
+.name-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 0 0 0px;
+    color: #1F4E79;
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1F4E79;
+    margin: 0 0 6px;
+}
+
+.subline {
+    max-width: 400px;          /* giúp văn bản không bị quá dài */
+    line-height: 1.45;
+    font-size: 14px;
+    color: #4A5568;            /* muted – sang hơn */
+    margin-top: 0px;
+}
+
+.header-right a {
+    margin-left: 28px;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--deep-blue);
+    font-weight: 600;
+}
+
+.resume-btn {
+    border-bottom: 2px solid var(--deep-blue);
+}
+
+/* ---------- PROJECTS SECTION ---------- */
+.projects-section {
+    padding: 10px 70px 60px;
+}
+
+.projects-title {
+    font-size: 25px;
+    color: var(--deep-blue);
+}
+
+.projects-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 0px;   
+}
+
+.projects-title {
+    margin-top: 0px;   
+}
+
+/* ---------- NEW PROJECT CARD ---------- */
+.project-card-new {
+    background: var(--white);
+    border-radius: 14px;
+    border: 1px solid var(--grey);
+    box-shadow: var(--soft-shadow);
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+}
+
+.project-img-new {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.skills-row {
+    margin: 10px 0 8px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.skill-badge {
+    background: #1F4E79;     /* xanh cố định */
+    color: #FFFFFF;          /* chữ trắng */
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    border: none;
+}
+
+
+.project-desc {
+    font-size: 13px;
+    color: var(--dark-grey);
+    flex-grow: 1;
+}
+
+.learn-more {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--deep-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ---------- DARK MODE ---------- */
+.dark-mode {
+    background: #0F1B2B;
+    color: #f5f5f5;
+}
+
+.dark-mode .name-title,
+.dark-mode .projects-title {
+    color: white;
+}
+
+.dark-mode .tagline {
+    color: #cbd7e1;
+}
+
+.dark-mode .header-right a {
+    color: #e0ecff;
+}
+
+.dark-mode .resume-btn {
+    border-color: #e0ecff;
+}
+
+.dark-mode .project-card-new {
+    background: #14273D;
+    border-color: #1f3a52;
+}
+
+.dark-mode .project-desc {
+    color: #cbd7e1;
+}
+
+.dark-mode .learn-more {
+    color: #e0ecff;
+}
+
+/* ---------- DARK MODE TOGGLE BUTTON ---------- */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.25s ease;
+}
+
+.toggle-btn .material-symbols-rounded {
+    font-size: 20px;
+    color: var(--dark-grey);
+    transition: color 0.25s ease;
+}
+
+.dark-mode .toggle-btn .material-symbols-rounded {
+    color: white;
+}

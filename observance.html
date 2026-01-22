@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>OBSERVANCE – Recherche & IA appliquées aux SHS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<section class="project-hero">
+  <h1>OBSERVANCE</h1>
+  <p class="subtitle">
+    Analyse automatisée de corpus administratifs en sciences humaines et sociales
+    par NLP, LLM et RAG
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>Contexte scientifique</h2>
+  <p>
+    Le projet <strong>OBSERVANCE</strong> s’inscrit dans le champ des humanités numériques
+    et de l’analyse automatisée de documents réglementaires.
+    Il vise à comprendre comment les recommandations de l’Autorité environnementale (Ae)
+    sont prises en compte dans les processus décisionnels publics.
+  </p>
+  <p>
+    Ces processus génèrent une volumétrie documentaire importante, hétérogène
+    (PDF textuels, scannés, hybrides) et difficilement exploitable à grande échelle
+    sans outils d’intelligence artificielle.
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>Question de recherche</h2>
+  <p>
+    Comment automatiser l’extraction, la structuration et l’analyse de documents administratifs
+    complexes afin d’évaluer, à grande échelle, la prise en compte effective
+    d’enjeux environnementaux dans la décision publique ?
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>Pipeline IA & traitement des données</h2>
+  <ul>
+    <li>Ingestion de corpus massifs issus de plateformes institutionnelles</li>
+    <li>Conversion PDF (pdfplumber, OCR avec Tesseract)</li>
+    <li>Nettoyage et normalisation linguistique</li>
+    <li>Extraction ciblée d’informations (regex, LLM locaux)</li>
+    <li>Classification automatique par modèles de langage (GPT-4, LLaMA)</li>
+    <li>Structuration relationnelle (SQLite + FTS)</li>
+    <li>Indexation vectorielle et système RAG (ChromaDB)</li>
+  </ul>
+</section>
+
+<section class="project-section">
+  <h2>Modèles NLP, LLM & RAG</h2>
+  <p>
+    Le projet mobilise des approches de traitement automatique du langage
+    combinant méthodes déterministes et modèles génératifs.
+  </p>
+  <ul>
+    <li>Classification sémantique via LLM (GPT-4, LLaMA 3.2)</li>
+    <li>Comparaison zero-shot / few-shot</li>
+    <li>Segmentation et vectorisation multilingue</li>
+    <li>Architecture Retrieval-Augmented Generation pour l’exploration du corpus</li>
+  </ul>
+</section>
+
+<section class="project-section">
+  <h2>Évaluation scientifique</h2>
+  <p>
+    Chaque étape du pipeline a été évaluée à l’aide de métriques adaptées :
+  </p>
+  <ul>
+    <li>CER / WER / F1-score lexical pour l’OCR</li>
+    <li>Accuracy, F1-macro, MAE pour la classification</li>
+    <li>Analyse de stabilité inter-runs</li>
+  </ul>
+  <p>
+    Cette démarche met en évidence les forces et limites des modèles,
+    notamment face aux documents longs et hétérogènes.
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>Ingénierie des connaissances</h2>
+  <p>
+    Les données extraites ont été organisées selon un schéma relationnel
+    permettant la traçabilité, l’extensibilité et l’alignement avec des usages
+    de recherche en sciences humaines et sociales.
+  </p>
+  <p>
+    Cette structuration constitue un socle pour des travaux ultérieurs
+    en ontologies, graphes sémantiques et ressources terminologiques.
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>Prototype et déploiement</h2>
+  <p>
+    Un prototype fonctionnel a été déployé sous Streamlit,
+    intégrant une interface de consultation et un module RAG interactif.
+  </p>
+  <p>
+    Ce livrable démontre la faisabilité technique du passage
+    d’un cadre de recherche à un service numérique expérimental.
+  </p>
+</section>
+
+<section class="project-section">
+  <h2>Compétences démontrées</h2>
+  <ul class="skills-grid">
+    <li>Python, Pandas, scikit-learn</li>
+    <li>NLP & modèles génératifs</li>
+    <li>LLM, RAG, LangChain</li>
+    <li>Traitement de données SHS complexes</li>
+    <li>Ingénierie de pipelines IA reproductibles</li>
+    <li>Production de livrables scientifiques documentés</li>
+  </ul>
+</section>
+
+<section class="project-section">
+  <a href="https://github.com/TON_GITHUB/observance" target="_blank" class="btn">
+    Voir le code sur GitHub →
+  </a>
+</section>
+
+</body>
+</html>

@@ -566,3 +566,211 @@ a {
     font-size: 20px;
   }
 }
+
+/* =========================
+   OBSERVANCE PAGE 
+========================= */
+
+.observance-page{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 8px 22px 48px;
+}
+
+.obs-topbar{
+  position: relative;
+  height: 68px;              
+  margin: 10px 0 10px;
+}
+
+.back-home{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #2a6f6f;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.back-home:hover{
+  opacity: 1;
+}
+
+.obs-brand{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.obs-logo{
+  width: 150px;
+  height: auto;
+}
+
+/* HERO */
+.obs-hero{
+  text-align: center;
+  padding: 4px 0 6px;
+}
+
+/* LOGO — KEEP SIZE */
+.obs-hero-subtitle{
+  margin: 0px auto;
+  font-size: 14px;
+  color: #2a6f6f;
+  line-height: 1.5;
+}
+
+.obs-hero-subtitle-2{
+  margin: 0px auto;
+  font-size: 11.5px;
+  color: var(--dark-grey);
+}
+
+/* CARDS */
+.obs-card,
+.obs-links-card{
+  margin: 14px auto 0;
+  padding: 18px 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(31, 78, 121, 0.18);
+  box-shadow: var(--soft-shadow);
+}
+
+.obs-card-title{
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #2a6f6f;
+}
+
+.obs-card-subtitle{
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #2a6f6f;
+}
+
+.obs-text{
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--dark-grey);
+}
+
+.obs-list{
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.obs-list li{
+  margin: 5px 0;
+}
+
+.obs-list strong{
+  color: #2a6f6f;
+}
+
+/* SKILLS GRID */
+.obs-skill-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.obs-skill-card{
+  padding: 12px 12px 10px;
+  border-radius: 14px;
+  background: rgba(31, 78, 121, 0.04);
+  border: 1px solid rgba(31, 78, 121, 0.12);
+}
+
+.obs-skill-card h3{
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #2a6f6f;
+}
+
+.obs-skill-card ul{
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+/* LINKS */
+.obs-links-row{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.obs-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #2a6f6f;
+  padding: 5px 7px;
+  border-radius: 10px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.obs-link:hover{
+  background: rgba(31, 78, 121, 0.08);
+  transform: translateY(-1px);
+}
+
+.obs-link .material-symbols-rounded{
+  font-size: 17px;
+}
+
+.obs-muted{
+  font-weight: 600;
+  color: #6B7280;
+}
+
+.obs-cta{
+  margin-left: auto;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #2a6f6f;
+  color: white;
+  font-size: 11.5px;
+  font-weight: 700;
+  box-shadow: var(--soft-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.obs-cta:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--soft-shadow-hover);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .observance-page{
+    padding: 8px 16px 44px;
+  }
+
+  .obs-skill-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .obs-cta{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+

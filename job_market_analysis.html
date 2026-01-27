@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+  <title>OBSERVANCE – Projet | Linh Dinh</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCJKD292YN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RCJKD292YN');
+  </script>
+</head>
+
+<body class="home-page">
+
+  <!-- HEADER -->
+  <header class="obs-topbar">
+    <a href="index.html" class="back-home">← Retour à l'accueil</a>
+
+    <div class="obs-brand">
+      <img src="images/observance_logo.png" alt="Observance" class="obs-logo" />
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="observance-page">
+
+    <!-- HERO -->
+    <section class="obs-hero">
+      <h1 class="obs-hero-subtitle">
+        Plateforme d'analyse NLP pour données SHS environnementales
+      </h1>
+      <p class="obs-hero-subtitle-2">
+        Recherche appliquée · NLP · IA générative · RAG · Data engineering 
+      </p>
+    </section>
+
+    <!-- POURQUOI -->
+    <section class="obs-card">
+      <h2 class="obs-card-title">Pourquoi ce projet ?</h2>
+      <p class="obs-text">
+        OBSERVANCE permet d'analyser automatiquement les avis de l'Autorité environnementale (Ae) afin 
+        de faciliter la compréhension de la prise en compte des enjeux environnementaux dans la 
+        décision publique.
+      </p>
+    </section>
+
+    <!-- CE QUE J'AI FAIT -->
+    <section class="obs-card">
+      <h2 class="obs-card-title">Ce que j'ai fait concrètement</h2>
+      <ul class="obs-list">
+        <li>Structuration d'un corpus de 2400+ documents (PDF + métadonnées)</li>
+        <li>Pipeline NLP : extraction (PDF/OCR), nettoyage, segmentation, chunking</li>
+        <li>Indexation vectorielle & recherche sémantique via un moteur RAG</li>
+        <li>Analyse qualitative des résultats + livrables documentés</li>
+      </ul>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="obs-card">
+      <h2 class="obs-card-title">Compétences mobilisées</h2>
+
+      <div class="obs-skill-grid">
+
+        <div class="obs-skill-card">
+          <h3>IA & NLP</h3>
+          <ul>
+            <li>NLP & text mining (Python)</li>
+            <li>OCR & qualité texte (pdfplumber, pytesseract)</li>
+            <li>Chunking & embeddings multilingues (LangChain, Hugging Face / OpenAI)</li>
+            <li>RAG : indexation & recherche sémantique (LangChain, ChromaDB)</li>
+            <li>LLM : génération cloud & local (OpenAI, Ollama)</li>
+          </ul>
+        </div>
+
+        <div class="obs-skill-card">
+          <h3>Data & ingénierie</h3>
+          <ul>
+            <li>Pipelines de traitement & automatisation (Python)</li>
+            <li>Structuration de base de données & requêtes (SQLite)</li>
+            <li>Analyse & indicateurs (Pandas)</li>
+            <li>Visualisation interactive (Streamlit, Plotly)</li>
+            <li>Cartographie : WKT → GeoJSON (Shapely)</li>
+          </ul>
+        </div>
+
+        <div class="obs-skill-card">
+          <h3>Cloud & déploiement</h3>
+          <ul>
+            <li>Déploiement sur VM (Google Compute Engine)</li>
+            <li>Stockage / transfert de données (Google Cloud Storage)</li>
+            <li>Environnements reproductibles (Docker)</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+      <!-- LIENS -->
+      <section class="obs-links-card">
+        <h2 class="obs-card-title">Ressources</h2>
+
+        <div class="obs-links-row">
+          <a
+            href="https://www.canva.com/design/DAGyXlGTcrQ/U1Fswd8NBQJTfmo6HWsqPw/view"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="obs-link"
+          >
+            <span class="material-symbols-rounded">slideshow</span>
+            <span><strong>Présentation</strong> <span class="obs-muted">(slides)</span></span>
+          </a>
+
+          <a
+            class="obs-link"
+            href="assets/2025_iodaa_rapport_final_DINH_Linh.pdf"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="material-symbols-rounded">description</span>
+            <span><strong>Rapport</strong> <span class="obs-muted">(PDF)</span></span>
+          </a>
+
+          <a
+            href="https://www.youtube.com/watch?v=cJEdN0sVpQI"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="obs-link"
+          >
+            <span class="material-symbols-rounded">play_circle</span>
+            <span><strong>Vidéo</strong> <span class="obs-muted">(démonstration de l'application)</span></span>
+          </a>
+
+          <a
+            class="obs-link"
+            href="https://observance-demo.streamlit.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="material-symbols-rounded">bar_chart</span>
+            <span><strong>Application</strong> <span class="obs-muted">(Version démo)</span></span>
+          </a>
+
+          <a
+            class="obs-link"
+            href="https://github.com/linh-dinh-1012/observance_app"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="material-symbols-rounded">terminal</span>
+            <span><strong>Code</strong> <span class="obs-muted">(GitHub)</span></span>
+          </a>
+        </div>
+      </section>
+
+    <p style="text-align:center; font-size:12px; opacity:0.6;">
+      © Linh Dinh, 2026
+    </p>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+  <title>Job market analysis - Projet | Linh Dinh</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCJKD292YN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RCJKD292YN');
+  </script>
+</head>
+
+<body class="home-page">
+
+  <!-- HEADER -->
+  <header class="job-topbar">
+  <a href="index.html" class="back-home">← Retour à l'accueil</a>
+  </header>
+
+  <!-- MAIN -->
+  <main class="job-page">
+
+    <!-- HERO -->
+    <section class="job-hero">
+      <h1 class="job-hero-subtitle">
+        Explorateur du marché de l'emploi
+      </h1>
+      <p class="job-hero-subtitle-2">
+        <strong>Analyse des offres d'emploi pour une meilleure compréhension du marché du travail</strong>
+      </p>
+    </section>
+
+    <!-- POURQUOI -->
+    <section class="job-card">
+      <h2 class="job-card-title">Pourquoi ce projet ?</h2>
+      <p class="job-text">
+        Avoir marre de dix-mille fenêtres ouvertes sur mon navigateur pour chercher des offres d'emploi, c'est le point de départ de ce projet. J'ai voulu créer un outil qui me permette de centraliser, analyser et visualiser les offres d'emploi de manière efficace.
+      </p>
+      <p class="job-text" style="margin-top:6px;">
+        L'objectif est de mieux comprendre les tendances du marché du travail, d'identifier les compétences recherchées, et de faciliter la recherche d'emploi. Ce projet est aussi un support pour monter en compétences en data engineering, API, web scraping et déploiement cloud.
+      </p>
+    </section>
+
+    <!-- CE QUE J'AI FAIT -->
+    <section class="job-card">
+      <h2 class="job-card-title">Ce que j'ai fait concrètement</h2>
+      <ul class="job-list">
+        <li>Collecte automatisée d'offres d'emploi via l'API France Travail</li>
+        <li>Collecte complémentaire d'offres via web scraping (Welcome to the Jungle)</li>
+        <li>Nettoyage, normalisation et structuration des données brutes</li>
+        <li>Conception d'un schéma relationnel PostgreSQL pour le stockage des données</li>
+        <li>Mise en place d'un pipeline d'ingestion reproductible (Python → PostgreSQL)</li>
+        <li>
+          Production d'indicateurs analytiques et de visualisations : volumétrie des offres,
+          dynamiques territoriales, compétences dominantes, bornes salariales, cartographie
+          des emplois et rapprochement de métiers par similarité sémantique
+        </li>
+        <li>Développement d'un tableau de bord interactif pour l'exploration du marché de l'emploi</li>
+      </ul>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="job-card">
+      <h2 class="job-card-title">Compétences mobilisées</h2>
+
+      <div class="job-skill-grid">
+
+        <div class="job-skill-card">
+          <h3>Data engineering</h3>
+          <ul>
+            <li>Collecte de données via API (France Travail)</li>
+            <li>Web scraping ciblé (Welcome to the Jungle)</li>
+            <li>Nettoyage, normalisation et contrôle qualité des données (Python)</li>
+            <li>Modélisation relationnelle et contraintes d'intégrité (PostgreSQL)</li>
+            <li>Pipelines d'ingestion reproductibles et versionnés</li>
+          </ul>
+        </div>
+
+        <div class="job-skill-card">
+          <h3>Back-end, API & déploiement</h3>
+          <ul>
+            <li>Développement d'une API REST avec Django REST Framework</li>
+            <li>Conteneurisation de l'application avec Docker</li>
+            <li>Connexion à une base PostgreSQL hébergée (Supabase)</li>
+            <li>Déploiement de services sur le cloud (Render)</li>
+          </ul>
+        </div>
+
+        <div class="job-skill-card">
+          <h3>Analyse, visualisation</h3>
+          <ul>
+            <li>Analyse exploratoire et indicateurs du marché de l'emploi (Pandas)</li>
+            <li>Visualisations interactives et cartographie (Plotly)</li>
+            <li>Application analytique avec Streamlit</li>
+            <li>Documentation technique du projet avec Sphinx</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LIENS -->
+    <section class="job-links-card">
+      <h2 class="job-card-title">Ressources</h2>
+
+      <div class="job-links-row">
+
+        <!-- APP -->
+        <a
+          class="job-link"
+          href="https://job-market-explorer.streamlit.app/"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="material-symbols-rounded">bar_chart</span>
+          <span><strong>Application</strong> <span class="job-muted">(dashboard analytique)</span></span>
+        </a>
+
+        <!-- API -->
+        <a
+          class="job-link"
+          href="https://job-market-analysis-pmvc.onrender.com/api/jobs/"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="material-symbols-rounded">cloud</span>
+          <span><strong>API</strong> <span class="job-muted">(endpoint REST public)</span></span>
+        </a>
+
+        <!-- API DOC -->
+        <a
+          class="job-link"
+          href="https://linhdinh.fr/job-market-analysis/api-docs/"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="material-symbols-rounded">description</span>
+          <span><strong>Documentation API</strong> <span class="job-muted">(Sphinx)</span></span>
+        </a>
+
+        <!-- CODE -->
+        <a
+          class="job-link"
+          href="https://github.com/linh-dinh-1012/job-market-analysis"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="material-symbols-rounded">terminal</span>
+          <span><strong>Code</strong> <span class="job-muted">(API REST & déploiement cloud)</span></span>
+        </a>
+
+                <a
+          class="job-link"
+          href="https://github.com/linh-dinh-1012/job-market-explorer"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="material-symbols-rounded">terminal</span>
+          <span><strong>Code</strong> <span class="job-muted">(collecte, analyse & visualisation des données)</span></span>
+        </a>
+
+
+      </div>
+    </section>
+
+
+    <p style="text-align:center; font-size:12px; opacity:0.6;">
+      © Linh Dinh, 2026
+    </p>
+
+  </main>
+</body>
+</html>

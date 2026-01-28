@@ -617,7 +617,7 @@ a {
   padding: 4px 0 6px;
 }
 
-/* LOGO — KEEP SIZE */
+/* HERO TEXT*/
 .obs-hero-subtitle{
   margin: 0px auto;
   font-size: 14px;
@@ -774,3 +774,209 @@ a {
   }
 }
 
+/* =========================
+   JOB PAGE 
+========================= */
+
+.job-page{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 8px 22px 48px;
+}
+
+.job-topbar{
+  position: relative;
+  height: 68px;              
+  margin: 10px 0 10px;
+}
+
+.back-home{
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  color: #4A6FA5;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.back-home:hover{
+  opacity: 1;
+}
+
+.job-brand{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.job-logo{
+  width: 150px;
+  height: auto;
+}
+
+/* HERO */
+.job-hero{
+  text-align: center;
+  padding: 4px 0 6px;
+}
+
+/* HERO TEXT*/
+.job-hero-subtitle{
+  margin: 0px auto;
+  font-size: 30px;
+  color: #4A6FA5;
+  line-height: 1.5;
+}
+
+.job-hero-subtitle-2{
+  margin: 0px auto;
+  font-size: 12px;
+  color: var(--dark-grey);
+}
+
+/* CARDS */
+.job-card,
+.job-links-card{
+  margin: 14px auto 0;
+  padding: 18px 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(31, 78, 121, 0.18);
+  box-shadow: var(--soft-shadow);
+}
+
+.job-card-title{
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #4A6FA5;
+}
+
+.job-card-subtitle{
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #4A6FA5;
+}
+
+.job-text{
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--dark-grey);
+}
+
+.job-list{
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.job-list li{
+  margin: 5px 0;
+}
+
+.job-list strong{
+  color: #4A6FA5;
+}
+
+/* SKILLS GRID */
+.job-skill-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.job-skill-card{
+  padding: 12px 12px 10px;
+  border-radius: 14px;
+  background: rgba(31, 78, 121, 0.04);
+  border: 1px solid rgba(31, 78, 121, 0.12);
+}
+
+.job-skill-card h3{
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 800;
+  color: #4A6FA5;
+}
+
+.job-skill-card ul{
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+/* LINKS */
+.job-links-row{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.job-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #4A6FA5;
+  padding: 5px 7px;
+  border-radius: 10px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.job-link:hover{
+  background: rgba(31, 78, 121, 0.08);
+  transform: translateY(-1px);
+}
+
+.job-link .material-symbols-rounded{
+  font-size: 17px;
+}
+
+.job-muted{
+  font-weight: 600;
+  color: #6B7280;
+}
+
+.job-cta{
+  margin-left: auto;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: #4A6FA5;
+  color: white;
+  font-size: 11.5px;
+  font-weight: 700;
+  box-shadow: var(--soft-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-cta:hover{
+  transform: translateY(-2px);
+  box-shadow: var(--soft-shadow-hover);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px){
+  .job-page{
+    padding: 8px 16px 44px;
+  }
+
+  .job-skill-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .job-cta{
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}

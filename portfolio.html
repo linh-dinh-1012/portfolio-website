@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+  <title>Linh Dinh - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCJKD292YN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-RCJKD292YN');
+  </script>
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="main-header">
+    <div class="header-left">
+      <h1 class="name-title">Linh DINH</h1>
+      <p class="tagline">Ingénieure Data & IA</p>
+      <p class="subline">
+        Données & IA au service de la recherche et de l'action publique
+      </p>
+    </div>
+
+    <nav class="header-right">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="researchs.html">Recherche</a>
+      <a href="contact.html">Contact</a>
+      </a>
+
+      <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
+        <span class="material-symbols-rounded">light_mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main class="home-page">
+
+    <section class="projects-section">
+      <h2 class="projects-title">Projets réalisés</h2>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left" id="prevBtn">‹</button>
+
+        <div class="carousel-track" id="carouselTrack">
+
+          <!-- PROJECT 1 -->
+          <a href="observance.html" class="project-link">
+            <div class="project-card-new">
+              <img src="images/o_page_daccueil.png" class="project-img-new" alt="Observance">
+
+              <div class="skills-row">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">LLMs</span>
+                <span class="skill-badge">Text Mining</span>
+                <span class="skill-badge">Data Pipeline</span>
+                <span class="skill-badge">RAG</span>
+                <span class="skill-badge">GCP</span>
+                <span class="skill-badge">Docker</span>
+              </div>
+
+              <p class="project-desc">
+                Révéler, par l'<strong>analyse automatisée de milliers de rapports</strong>,
+                comment les enjeux environnementaux sont pris en compte dans la décision publique.
+              </p>
+
+              <span class="learn-more">En savoir plus →</span>
+            </div>
+          </a>
+
+          <!-- PROJECT 2 -->
+          <a href="job.html" class="project-link">
+            <div class="project-card-new">
+              <img src="images/job_market_analysis.png" class="project-img-new" alt="job_market_analysis">
+
+              <div class="skills-row">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">Django REST</span>
+                <span class="skill-badge">Data Integration</span>
+                <span class="skill-badge">API REST</span>
+                <span class="skill-badge">Docker</span>
+                <span class="skill-badge">Data Quality</span>
+                <span class="skill-badge">Reproducibility</span>
+              </div>
+
+              <p class="project-desc">
+                Projet d'ingénierie et de fouille de données :
+                intégration, structuration et exploitation de données hétérogènes
+                via une base <strong>PostgreSQL</strong> et une <strong>API REST</strong>,
+                avec des analyses <strong>reproductibles</strong> et des
+                <strong>visualisations documentées</strong>.
+              </p>
+
+              <span class="learn-more">En savoir plus →</span>
+            </div>
+          </a>
+
+          <!-- PROJECT 3 -->
+          <a href="https://github.com/linh-dinh-1012/bluegreen-governance-ai-analysis" target="_blank"
+            class="project-link">
+            <div class="project-card-new">
+              <img src="images/bluegreen_governance.png" class="project-img-new" alt="BlueGreen Governance">
+              <div class="skills-row">
+                <span class="skill-badge">AI Consulting</span>
+                <span class="skill-badge">Document Analysis</span>
+                <span class="skill-badge">LLMs</span>
+                <span class="skill-badge">International Teamwork</span>
+              </div>
+              <p class="project-desc">
+                <strong>70 % de temps gagné</strong> sur l'analyse d'un corpus de plus de 400 documents, grâce à un
+                programme d'<strong>IA générative</strong> développé pour un projet Horizon Europe en gouvernance
+                environnementale.
+              </p>
+              <span class="learn-more">En savoir plus →</span>
+            </div>
+          </a>
+
+          <!-- PROJECT 4 -->
+          <a href="https://www.data.gouv.fr/reuses/dpe-vs-consommation-reelle-delectricite-a-paris-analyse-data"
+            target="_blank" rel="noopener noreferrer" class="project-link">
+            <div class="project-card-new">
+              <img src="images/DPE_page0.png" class="project-img-new" alt="DPE">
+
+              <div class="skills-row">
+                <span class="skill-badge">Open Data</span>
+                <span class="skill-badge">Power BI</span>
+                <span class="skill-badge">Data Analytics</span>
+                <span class="skill-badge">DataViz</span>
+                <span class="skill-badge">ETL</span>
+                <span class="skill-badge">Storytelling</span>
+              </div>
+
+              <p class="project-desc">
+                Un bon DPE est censé prédire la consommation électrique.<br>
+                <strong>Mais qu'en est-il dans la réalité ?</strong><br>
+                Analyse réalisée sur près de 40 000 logements parisiens.
+              </p>
+
+              <span class="learn-more">En savoir plus →</span>
+            </div>
+          </a>
+
+          <!-- PROJECT 5 -->
+          <a href="https://linh-dinh-1012.github.io/count-documentation/index.html" target="_blank"
+            rel="noopener noreferrer" class="project-link">
+            <div class="project-card-new">
+              <img src="images/count.png" class="project-img-new" alt="COUNT - Calcul d'empreinte carbone">
+
+              <div class="skills-row">
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">Sphinx (documentation)</span>
+                <span class="skill-badge">Calcul d'empreinte carbone</span>
+              </div>
+              <p class="project-desc">
+                La culture et son impact sur l'environnement.<br>
+                Proposition d'une <strong>structure de base de données pour COUNT</strong>, le premier calculateur
+                d'empreinte carbone dédié aux salles de cinéma.
+              </p>
+              <span class="learn-more">En savoir plus →</span>
+            </div>
+          </a>
+
+          <!-- PROJECT 6 -->
+          <a href="assets/EmpowerHer-IA-Accompagner-lAdoption-de-lIA.pdf" target="_blank" class="project-link">
+            <div class="project-card-new">
+              <img src="images/hackathon.png" class="project-img-new" alt="Mon Coach IA">
+              <div class="skills-row">
+                <span class="skill-badge">GenAI</span>
+                <span class="skill-badge">Product Design</span>
+                <span class="skill-badge">Pitching</span>
+                <span class="skill-badge">Storytelling</span>
+              </div>
+              <p class="project-desc">
+                Projet finaliste du Hackathon <strong>Women in GENAI</strong> organisé par EY & Microsoft :
+                <strong>Mon Coach IA</strong>, une application conçue pour faciliter l'adoption
+                de l'IA par les collaborateurs de l'URSSAF.
+              </p>
+              <span class="learn-more">En savoir plus →</span>
+            </div>
+          </a>
+
+          <!-- PROJECT 7 -->
+          <a href="https://www.zero-dechet-sauvage.org/ramassages-realises" target="_blank" class="project-link">
+            <div class="project-card-new">
+              <img src="images/zds.png" class="project-img-new" alt="Zéro déchet sauvage">
+              <div class="skills-row">
+                <span class="skill-badge">ETL</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">DataViz</span>
+                <span class="skill-badge">Dashboard</span>
+              </div>
+              <p class="project-desc">
+                Faire parler les données pour aider les collectivités à prioriser l'<strong>action contre les déchets
+                  sauvages</strong>.
+              </p>
+              <span class="learn-more">En savoir plus →</span>
+            </div>
+          </a>
+
+          <!-- PROJECT 8 -->
+          <a href="https://github.com/linh-dinh-1012/OZ-Fish" target="_blank" class="project-link">
+            <div class="project-card-new">
+              <img src="images/oz_fish.png" class="project-img-new" alt="OZ Fish">
+              <div class="skills-row">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Computer Vision</span>
+                <span class="skill-badge">Deep Learning</span>
+                <span class="skill-badge">Image Classification</span>
+              </div>
+              <p class="project-desc">
+                Identifier automatiquement des espèces de poissons à partir d'images sous-marines,
+                au service de la <strong>biodiversité marine</strong> et des enjeux de conservation.
+              </p>
+              <span class="learn-more">En savoir plus →</span>
+            </div>
+          </a>
+
+        </div>
+        <button class="carousel-btn right" id="nextBtn">›</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= SCRIPTS ================= -->
+
+  <!-- Carousel -->
+  <script>
+    const track = document.getElementById("carouselTrack");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    const scrollAmount = 320;
+
+    nextBtn.addEventListener("click", () => {
+      track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    });
+
+    prevBtn.addEventListener("click", () => {
+      track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    });
+  </script>
+
+  <!-- Dark mode -->
+  <script>
+    document.getElementById("darkToggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+
+  <footer style="text-align:center; font-size:12px; opacity:0.6; margin:24px 0;">
+    © Linh Dinh, 2026
+  </footer>
+
+</body>
+
+</html>

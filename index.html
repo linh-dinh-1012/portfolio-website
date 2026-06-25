@@ -4,269 +4,300 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>26 juin</title>
 
-  <!-- Material Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f7f1e8;
+      color: #2d241f;
+    }
 
-  <title>Linh Dinh - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    header {
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 48px;
+      background: rgba(255, 250, 244, 0.95);
+      font-family: Arial, sans-serif;
+      letter-spacing: 2px;
+      font-size: 13px;
+      position: relative;
+      z-index: 10;
+    }
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RCJKD292YN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-RCJKD292YN');
-  </script>
+    nav a {
+      margin-left: 32px;
+      text-decoration: none;
+      color: #2d241f;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      position: relative;
+      min-height: calc(100vh - 80px);
+      padding: 60px 20px 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(247, 241, 232, 0.82), rgba(247, 241, 232, 0.9)),
+        url("images/notebook.jpg") right bottom / 420px auto no-repeat;
+    }
+
+    .content {
+      max-width: 720px;
+      z-index: 2;
+    }
+
+    .date {
+      font-family: Arial, sans-serif;
+      letter-spacing: 5px;
+      font-size: 14px;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 68px;
+      font-weight: 400;
+      margin: 0 0 42px;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.7;
+      margin: 14px 0;
+    }
+
+    .separator {
+      width: 90px;
+      height: 1px;
+      background: #d5c6b8;
+      margin: 42px auto;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .signature {
+      font-size: 56px;
+      font-style: italic;
+      margin-top: 34px;
+    }
+
+    .polaroid {
+      position: absolute;
+      width: 210px;
+      padding: 12px 12px 38px;
+      background: #fffaf4;
+      box-shadow: 0 18px 35px rgba(60, 45, 35, 0.18);
+      z-index: 1;
+    }
+
+    .polaroid img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .polaroid::before {
+      content: "";
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-3deg);
+      width: 90px;
+      height: 28px;
+      background: rgba(198, 168, 133, 0.55);
+    }
+
+    .polaroid.one {
+      top: 120px;
+      right: 8%;
+      transform: rotate(5deg);
+    }
+
+    .polaroid.two {
+      bottom: 80px;
+      left: 7%;
+      transform: rotate(-4deg);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 44px 80px;
+      background: rgba(255, 250, 244, 0.9);
+      text-align: center;
+    }
+
+    .card {
+      padding: 12px 34px;
+      border-right: 1px solid #ddd0c3;
+    }
+
+    .card:last-child {
+      border-right: none;
+    }
+
+    .icon {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0 0 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .landscape {
+      min-height: 260px;
+      background:
+        linear-gradient(rgba(247, 241, 232, 0.15), rgba(247, 241, 232, 0.2)),
+        url("images/sea.jpg") center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .landscape p {
+      font-size: 23px;
+      font-style: italic;
+      background: rgba(247, 241, 232, 0.35);
+      padding: 20px 30px;
+      border-radius: 2px;
+    }
+
+    footer {
+      padding: 42px 68px;
+      font-size: 15px;
+      background: #fffaf4;
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .polaroid {
+        opacity: 0.28;
+        width: 160px;
+      }
+
+      .polaroid.one {
+        right: -30px;
+      }
+
+      .polaroid.two {
+        left: -30px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+        padding: 36px 24px;
+      }
+
+      .card {
+        border-right: none;
+        border-bottom: 1px solid #ddd0c3;
+      }
+
+      .card:last-child {
+        border-bottom: none;
+      }
+
+      footer {
+        padding: 32px 24px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ================= HEADER ================= -->
-  <header class="main-header">
-    <div class="header-left">
-      <h1 class="name-title">Linh DINH</h1>
-      <p class="tagline">Ingénieure Data & IA</p>
-      <p class="subline">
-        Données & IA au service de la recherche et de l'action publique
-      </p>
-    </div>
+  <main>
+    <section class="hero">
+      <div class="polaroid one">
+        <img src="images/pandas.JPG" alt="Panda" />
+      </div>
 
-    <nav class="header-right">
-      <a href="index.html" class="active">Accueil</a>
-      <a href="about.html">À propos</a>
-      <a href="researchs.html">Recherche</a>
-      <a href="contact.html">Contact</a>
-      </a>
+      <div class="polaroid two">
+        <img src="images/beach.JPG" alt="Plage" />
+      </div>
 
-      <button id="darkToggle" class="toggle-btn" aria-label="Toggle dark mode">
-        <span class="material-symbols-rounded">light_mode</span>
-      </button>
-    </nav>
-  </header>
+      <div class="content">
+        <div class="date">26 JUIN 2026</div>
 
-  <!-- ================= MAIN ================= -->
-  <main class="home-page">
+        <h1>Joyeux Anniversaire Pierre</h1>
 
-    <section class="projects-section">
-      <h2 class="projects-title">Projets réalisés</h2>
+        <p>J'espère que tu passes une belle journée, et que cette nouvelle année sera remplie de belles choses.</p>
 
-      <div class="carousel-wrapper">
-        <button class="carousel-btn left" id="prevBtn">‹</button>
+        <p>Je t'écris ce petit message discrètement. Tu ne le verras peut-être jamais, mais ce n'est pas grave.
+          Après tout, c'est l'intention qui compte. 😉</p>
 
-        <div class="carousel-track" id="carouselTrack">
+        <p>J'espère sincèrement que tout va bien pour toi, où que tu sois.</p>
 
-          <!-- PROJECT 1 -->
-          <a href="observance.html" class="project-link">
-            <div class="project-card-new">
-              <img src="images/o_page_daccueil.png" class="project-img-new" alt="Observance">
+        <p>J'espère que tu as pu découvrir la vie, profiter de chaque instant et devenir la personne que tu avais envie
+          d'être.</p>
 
-              <div class="skills-row">
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">SQL</span>
-                <span class="skill-badge">LLMs</span>
-                <span class="skill-badge">Text Mining</span>
-                <span class="skill-badge">Data Pipeline</span>
-                <span class="skill-badge">RAG</span>
-                <span class="skill-badge">GCP</span>
-                <span class="skill-badge">Docker</span>
-              </div>
+        <p>Et si, un jour, tu penses à moi, je veux que tu saches que, malgré tout ce qui s'est passé, tu as toujours
+          une grande place dans mon cœur.</p>
 
-              <p class="project-desc">
-                Révéler, par l'<strong>analyse automatisée de milliers de rapports</strong>,
-                comment les enjeux environnementaux sont pris en compte dans la décision publique.
-              </p>
+        <p>Désolée de ne pas t'avoir écouté et de ne pas avoir réussi à « passer à autre chose ». 😜</p>
 
-              <span class="learn-more">En savoir plus →</span>
-            </div>
-          </a>
+        <p>Parce que ce n'est pas si facile... Tu t'en doutes sûrement, si tu es arrivé jusqu'à cette page.</p>
 
-          <!-- PROJECT 2 -->
-          <a href="job.html" class="project-link">
-            <div class="project-card-new">
-              <img src="images/job_market_analysis.png" class="project-img-new" alt="job_market_analysis">
+        <p>Et si un jour tu souhaites me contacter, tu peux le faire à tout moment. Ce sera avec grand plaisir.</p>
 
-              <div class="skills-row">
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">PostgreSQL</span>
-                <span class="skill-badge">Django REST</span>
-                <span class="skill-badge">Data Integration</span>
-                <span class="skill-badge">API REST</span>
-                <span class="skill-badge">Docker</span>
-                <span class="skill-badge">Data Quality</span>
-                <span class="skill-badge">Reproducibility</span>
-              </div>
+        <p>Et si tu n'en as pas envie, ce n'est pas grave non plus.</p>
 
-              <p class="project-desc">
-                Projet d'ingénierie et de fouille de données :
-                intégration, structuration et exploitation de données hétérogènes
-                via une base <strong>PostgreSQL</strong> et une <strong>API REST</strong>,
-                avec des analyses <strong>reproductibles</strong> et des
-                <strong>visualisations documentées</strong>.
-              </p>
+        <p>Il n'y a rien qui presse.</p>
 
-              <span class="learn-more">En savoir plus →</span>
-            </div>
-          </a>
+        <p>Vis ta vie, profite de chaque instant et sois heureux. C'est ce que j'essaie de faire moi aussi.</p>
 
-          <!-- PROJECT 3 -->
-          <a href="https://github.com/linh-dinh-1012/bluegreen-governance-ai-analysis" target="_blank"
-            class="project-link">
-            <div class="project-card-new">
-              <img src="images/bluegreen_governance.png" class="project-img-new" alt="BlueGreen Governance">
-              <div class="skills-row">
-                <span class="skill-badge">AI Consulting</span>
-                <span class="skill-badge">Document Analysis</span>
-                <span class="skill-badge">LLMs</span>
-                <span class="skill-badge">International Teamwork</span>
-              </div>
-              <p class="project-desc">
-                <strong>70 % de temps gagné</strong> sur l'analyse d'un corpus de plus de 400 documents, grâce à un
-                programme d'<strong>IA générative</strong> développé pour un projet Horizon Europe en gouvernance
-                environnementale.
-              </p>
-              <span class="learn-more">En savoir plus →</span>
-            </div>
-          </a>
+        <p>Je ne suis pas pressée.</p>
 
-          <!-- PROJECT 4 -->
-          <a href="https://www.data.gouv.fr/reuses/dpe-vs-consommation-reelle-delectricite-a-paris-analyse-data"
-            target="_blank" rel="noopener noreferrer" class="project-link">
-            <div class="project-card-new">
-              <img src="images/DPE_page0.png" class="project-img-new" alt="DPE">
+        <p>Comme le dit <em>Le Petit Prince</em> :</p>
 
-              <div class="skills-row">
-                <span class="skill-badge">Open Data</span>
-                <span class="skill-badge">Power BI</span>
-                <span class="skill-badge">Data Analytics</span>
-                <span class="skill-badge">DataViz</span>
-                <span class="skill-badge">ETL</span>
-                <span class="skill-badge">Storytelling</span>
-              </div>
+        <p><em>« C'est le temps que tu as consacré à ta rose qui fait ta rose si importante. »</em></p>
 
-              <p class="project-desc">
-                Un bon DPE est censé prédire la consommation électrique.<br>
-                <strong>Mais qu'en est-il dans la réalité ?</strong><br>
-                Analyse réalisée sur près de 40 000 logements parisiens.
-              </p>
+        <p>Enfin... je ne dirais pas que c'était du temps perdu.</p>
 
-              <span class="learn-more">En savoir plus →</span>
-            </div>
-          </a>
+        <p>J'aime plutôt penser que c'était du temps vécu.</p>
 
-          <!-- PROJECT 5 -->
-          <a href="https://linh-dinh-1012.github.io/count-documentation/index.html" target="_blank"
-            rel="noopener noreferrer" class="project-link">
-            <div class="project-card-new">
-              <img src="images/count.png" class="project-img-new" alt="COUNT - Calcul d'empreinte carbone">
+        <p>Et peut-être qu'un jour, lorsque le moment sera le bon, nos chemins se croiseront à nouveau.</p>
 
-              <div class="skills-row">
-                <span class="skill-badge">PostgreSQL</span>
-                <span class="skill-badge">Sphinx (documentation)</span>
-                <span class="skill-badge">Calcul d'empreinte carbone</span>
-              </div>
-              <p class="project-desc">
-                La culture et son impact sur l'environnement.<br>
-                Proposition d'une <strong>structure de base de données pour COUNT</strong>, le premier calculateur
-                d'empreinte carbone dédié aux salles de cinéma.
-              </p>
-              <span class="learn-more">En savoir plus →</span>
-            </div>
-          </a>
+        <div class="separator"></div>
 
-          <!-- PROJECT 6 -->
-          <a href="assets/EmpowerHer-IA-Accompagner-lAdoption-de-lIA.pdf" target="_blank" class="project-link">
-            <div class="project-card-new">
-              <img src="images/hackathon.png" class="project-img-new" alt="Mon Coach IA">
-              <div class="skills-row">
-                <span class="skill-badge">GenAI</span>
-                <span class="skill-badge">Product Design</span>
-                <span class="skill-badge">Pitching</span>
-                <span class="skill-badge">Storytelling</span>
-              </div>
-              <p class="project-desc">
-                Projet finaliste du Hackathon <strong>Women in GENAI</strong> organisé par EY & Microsoft :
-                <strong>Mon Coach IA</strong>, une application conçue pour faciliter l'adoption
-                de l'IA par les collaborateurs de l'URSSAF.
-              </p>
-              <span class="learn-more">En savoir plus →</span>
-            </div>
-          </a>
-
-          <!-- PROJECT 7 -->
-          <a href="https://www.zero-dechet-sauvage.org/ramassages-realises" target="_blank" class="project-link">
-            <div class="project-card-new">
-              <img src="images/zds.png" class="project-img-new" alt="Zéro déchet sauvage">
-              <div class="skills-row">
-                <span class="skill-badge">ETL</span>
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">DataViz</span>
-                <span class="skill-badge">Dashboard</span>
-              </div>
-              <p class="project-desc">
-                Faire parler les données pour aider les collectivités à prioriser l'<strong>action contre les déchets
-                  sauvages</strong>.
-              </p>
-              <span class="learn-more">En savoir plus →</span>
-            </div>
-          </a>
-
-          <!-- PROJECT 8 -->
-          <a href="https://github.com/linh-dinh-1012/OZ-Fish" target="_blank" class="project-link">
-            <div class="project-card-new">
-              <img src="images/oz_fish.png" class="project-img-new" alt="OZ Fish">
-              <div class="skills-row">
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">Computer Vision</span>
-                <span class="skill-badge">Deep Learning</span>
-                <span class="skill-badge">Image Classification</span>
-              </div>
-              <p class="project-desc">
-                Identifier automatiquement des espèces de poissons à partir d'images sous-marines,
-                au service de la <strong>biodiversité marine</strong> et des enjeux de conservation.
-              </p>
-              <span class="learn-more">En savoir plus →</span>
-            </div>
-          </a>
-
-        </div>
-        <button class="carousel-btn right" id="nextBtn">›</button>
+        <div class="signature">Linh</div>
       </div>
     </section>
 
   </main>
-
-  <!-- ================= SCRIPTS ================= -->
-
-  <!-- Carousel -->
-  <script>
-    const track = document.getElementById("carouselTrack");
-    const nextBtn = document.getElementById("nextBtn");
-    const prevBtn = document.getElementById("prevBtn");
-
-    const scrollAmount = 320;
-
-    nextBtn.addEventListener("click", () => {
-      track.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    });
-
-    prevBtn.addEventListener("click", () => {
-      track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    });
-  </script>
-
-  <!-- Dark mode -->
-  <script>
-    document.getElementById("darkToggle").addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-    });
-  </script>
-
-  <footer style="text-align:center; font-size:12px; opacity:0.6; margin:24px 0;">
-    © Linh Dinh, 2026
-  </footer>
-
 </body>
 
 </html>
